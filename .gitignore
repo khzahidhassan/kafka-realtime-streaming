@@ -1,0 +1,6 @@
+bike_model.pkl 
+hour_clean.csv 
+__pycache__/ 
+bike_data/ 
+venv/ 
+*.pyc 

@@ -1,0 +1,5 @@
+faust-streaming
+scikit-learn
+pandas
+kafka-python
+joblib
