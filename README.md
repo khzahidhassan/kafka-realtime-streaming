@@ -1,7 +1,9 @@
 # Real-Time Bike Sharing Prediction with Apache Kafka
 
 ## What This Project Does
-This project streams bike rental data in real time using Kafka.The producer reads the dataset line by line and pushes each record to Kafka.A Faust processor picks it up, runs a machine-learning model, and predicts how many bikes will be rented that hour.A consumer then prints the result live in the terminal as each prediction arrives.
+This project streams bike rental data in real time using Kafka.The producer reads the dataset line by line and pushes each record to Kafka.
+A Faust processor picks it up, runs a machine-learning model, and predicts how many bikes will be rented that hour.A consumer then prints the result
+live in the terminal as each prediction arrives.
 
 
 ```
@@ -35,7 +37,7 @@ data row by row                       predicts rentals                          
 - **RMSE:** 42.07 rentals
 - **Model file:** bike_model.pkl
 
-This is a regression task so R² and RMSE are used instead of accuracy or F1-score.
+Since this is a regression problem that predicts continuous values, we use R² = 0.9441 and RMSE = 42.07 as the evaluation metrics, following standard scikit-learn practices for regression models.F1-score is used for classification tasks. 
 
 
 ## Project Structure
@@ -102,10 +104,9 @@ Expected output in Terminal 3:
 
 ## Video Demo
 
-[Watch the live pipeline demo](https://drive.google.com/file/d/1hv_MSKWuP6Qc7A9TstSFqmmUzxaMsHvH/view?usp=sharing)
+[Watch the live pipeline demo](https://drive.google.com/file/d/1GXT9YjBCR4ahkfl91xHrafEZJnvpAU02/view?usp=sharing)
 
 The video shows all three terminals running at the same time:
 - Producer sending bike data into Kafka
 - Faust Processor predicting rentals from each record
 - Consumer printing live predictions in the terminal
-
