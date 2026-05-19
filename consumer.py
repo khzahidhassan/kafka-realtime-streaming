@@ -13,7 +13,7 @@ consumer = KafkaConsumer(
     sasl_plain_username=API_KEY,
     sasl_plain_password=API_SECRET,
     value_deserializer=lambda m: json.loads(m.decode('utf-8')),
-    auto_offset_reset='latest',
+    auto_offset_reset='earliest',
     group_id='output-consumer-group',
     api_version_auto_timeout_ms=30000,
 )
