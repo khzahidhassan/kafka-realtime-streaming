@@ -104,7 +104,7 @@ Expected output in Terminal 3:
 
 ## Video Demo
 
-[Watch the live pipeline demo](https://drive.google.com/file/d/1GXT9YjBCR4ahkfl91xHrafEZJnvpAU02/view?usp=sharing)
+[Watch the live pipeline demo](https://drive.google.com/file/d/1hv_MSKWuP6Qc7A9TstSFqmmUzxaMsHvH/view?usp=sharing)
 
 The video shows all three terminals running at the same time:
 - Producer sending bike data into Kafka
